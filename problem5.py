@@ -41,7 +41,8 @@ if y < 0:
     print("The equation cannot be factored")
 elif y >= 0:
     x = math.sqrt(y)
-    if (x).is_integer:
+    z = round(x)
+    if x == z:
         print("The equation can be factored")
     else:
         print("The equation cannot be factored")
