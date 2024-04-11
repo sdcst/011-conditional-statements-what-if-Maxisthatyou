@@ -25,6 +25,7 @@
 """
 
 x = str(input("Enter Username> "))
+x = x.strip()
 
 if x == "admin":
     y = str(input("Enter Password> "))
