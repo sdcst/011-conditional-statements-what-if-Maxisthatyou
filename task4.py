@@ -18,3 +18,9 @@ the sentence does not contain password
 Enter a sentence: The best password is no password.
 the sentence contains password
 """
+x = str(input("Please enter a sentence> "))
+
+if "password" in x:
+    print("The sentence contains the word password")
+else:
+    print("The sentence doesn't contains the word password")

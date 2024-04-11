@@ -33,3 +33,29 @@ that is an obtuse triangle
 
 
 """
+import math
+x = float(input("Please enter one side> "))
+y = float(input("Please enter a second side> "))
+z = float(input("Please enter a third side> "))
+
+hyp = max(x, y, z)
+
+if (hyp == x):
+    c = round(x)
+    b = round(y)
+    a = round(z)
+if (hyp == y):
+    c = round(y)
+    b = round(x)
+    a = round(z)
+if (hyp == z):
+    c = round(z)
+    b = round(x)
+    a = round(y)
+
+if ( a ** 2 + b ** 2 ) > ( c ** 2 ):
+    print("This is an acute triangle")
+elif ( a ** 2 + b ** 2 ) < ( c ** 2 ):
+    print("This is an obtuse triangle")
+else:
+    print("This is a right triangle")
